@@ -4,14 +4,27 @@ console.log(arrowTitle)
 // qestion_1
 
 // make sure that the variable is in the global scope
+let myFavoriteFood =  'myFavoriteFood';
+
 const favoriteFood = function () {
 
      return myFavoriteFood;
     
     // TODO: Your code here
   };
-   //let x = '10';
-   const myFavoriteFood = 'the value of `myFavoriteFood` variable';
+   
    // => the value of `myFavoriteFood` variable
   
-   
+//Q_2
+
+const updateFavoriteFood = function (newValue) {
+    // TODO: Your code here
+      
+     myFavoriteFood=newValue;
+
+    
+  };
+  
+  updateFavoriteFood("Pizza");
+  favoriteFood(); // => "Pizza"
+  
